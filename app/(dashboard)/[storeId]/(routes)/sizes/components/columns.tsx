@@ -3,6 +3,7 @@
 import type { ColumnDef } from '@tanstack/react-table';
 import { CellAction } from './cell-action';
 
+// eslint-disable-next-line @typescript-eslint/consistent-type-definitions
 export type SizeColumn = {
 	id: string;
 	name: string;
@@ -10,6 +11,7 @@ export type SizeColumn = {
 	createdAt: string;
 };
 
+// eslint-disable-next-line @typescript-eslint/array-type
 export const columns: ColumnDef<SizeColumn>[] = [
 	{
 		accessorKey: 'name',

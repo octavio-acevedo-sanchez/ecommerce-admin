@@ -3,6 +3,7 @@
 import type { ColumnDef } from '@tanstack/react-table';
 import { CellAction } from './cell-action';
 
+// eslint-disable-next-line @typescript-eslint/consistent-type-definitions
 export type ProductColumn = {
 	id: string;
 	name: string;
@@ -15,6 +16,7 @@ export type ProductColumn = {
 	createdAt: string;
 };
 
+// eslint-disable-next-line @typescript-eslint/array-type
 export const columns: ColumnDef<ProductColumn>[] = [
 	{
 		accessorKey: 'name',
